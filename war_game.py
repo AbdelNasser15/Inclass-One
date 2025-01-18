@@ -94,7 +94,7 @@ class Deck:
         result = ""
         for i in range(52):
             if i == self.counter:
-                result += "%s << Current Top Card\n" % self.deck[i]
+                result += "%s --> Current Top Card\n" % self.deck[i]
             elif i < self.counter:
                 result += "%s X\n" % self.deck[i]
             else:
